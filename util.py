@@ -96,3 +96,4 @@ async def dm(user, text: Optional[str] = None, embed: Optional[discord.Embed] = 
 def bar(done: int, total: int, width: int = 20) -> str:
     filled = 0 if total <= 0 else min(width, int(width * done / total))
     return "█" * filled + "░" * (width - filled)
+    
